@@ -5,7 +5,7 @@ function arrayMultiplicationOfPrevAndNext(arr, len) {
     if (len <= 1)
         return;
 
-    // Preview element.
+    // Previous element.
     let prev = arr[0];
     arr[0] = arr[0] * arr[1];
 
