@@ -53,6 +53,8 @@ const insertionSort = function (arr) {
                 temp = arr[j];
                 arr[j] = arr[j - 1];
                 arr[j - 1] = temp;
+            } else {
+                break;
             }
         }
     }
@@ -60,6 +62,7 @@ const insertionSort = function (arr) {
 }
 
 console.log(insertionSort(inputNumbers()));
+
 
 
 // Worst case time complexity for both sorting algorithm is O(N^2).
